@@ -39,7 +39,146 @@
 /*BODY*/
 body{
    font-family: "Outfit", sans-serif;
-   background-color: hsl(217, 54%, 11%);
+   background-color: #0d192b;
    font-size: 18px;
    font-weight: 300;
+}
+.container {
+   width: 100%;
+   max-width: 370px;
+   padding: 0px 10px;
+   margin: 150px auto;
+}
+/*CARD*/
+.card {
+   background-color: #14253d;
+   padding: 25px;
+   border-radius: 10px;
+   box-shadow: 0 0 30px #14253d71;
+}
+.card__img-box {
+   width: 100%;
+   height: 300px;
+   margin: 0px 0px 25px 0px;
+   position: relative;
+   cursor: pointer;
+
+}
+.card__view-box{
+   position: absolute;
+   background-color: rgba(0, 253, 251,0.5);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   visibility: hidden;
+}
+.card__img-box:hover .card__view-box{
+   visibility: visible;
+}
+.card__img {
+   width: 100%;
+   border-radius: 10px;
+   object-fit: cover;
+}
+.card__info {
+   margin: 0px 0px 25px 0px;
+}
+   /*INFO*/
+.info__title {
+   color: #fff;
+   font-size: 20px;
+   letter-spacing: 0.5px;
+   margin: 0px 0px 20px 0px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: color 0.3s ease-in-out;
+}
+.info__title:hover{
+   color: #00fdfb;
+}
+.info__text {
+   color: #8bacda;
+   margin: 0px 0px 25px 0px;
+}
+.info__stats {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+   /*STATS*/
+.stats__item {
+   display: flex;
+   align-items: center;
+}
+.stats__item:nth-child(1){
+   color: #00fdfb;
+}
+.stats__item:nth-child(2){
+   color: #8bacda;
+}
+.stats__icon{
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   margin: 0px 5px 0px 0px;
+}
+.stats__icon--ethe{
+   color: #00fdfb;
+   background-image: url(../images/icon-ethereum.svg);
+
+}
+.stats__icon--clock{
+   color: #8bacda;
+   background-image: url(../images/icon-clock.svg);
+}
+/*CARD*/
+.card__line {
+   background-color: #2f415b;
+   border: none;
+   width: 100%;
+   height: 1px;
+   margin: 0px 0px 15px 0px;
+}
+.card__footer {
+   display: flex;
+   align-items: center;
+}
+.card__box-img{
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   border: 1px solid #fff;
+   margin: 0px 15px 0px 0px;
+}
+.card__avtatar {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.card__name {
+   color: #fff;
+   cursor: pointer;
+   transition: color 0.3s ease-in-out;
+}
+.card__name:hover{
+   color: #00fdfb;
+
+}
+.card__color {
+   color: #8bacda;
+}
+
+@media (max-width: 375px) {
+   body{
+      font-size: 16px;
+   }
+   .info__title {
+      font-size: 18px;
+   }
 }
