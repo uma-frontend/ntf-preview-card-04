@@ -1,8 +1,8 @@
 /*FONT FACE*/
 @font-face {
    font-family: "Outfit";
-   src: url("Outfit-Regular.woff2") format("woff2"),
-       url("Outfit-Regular.woff") format("woff");
+   src: url("../fonts/Outfit-Regular.woff2") format("woff2"),
+       url("../fonts/Outfit-Regular.woff") format("woff");
    font-weight: normal;
    font-style: normal;
    font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
    font-family: "Outfit";
-   src: url("Outfit-SemiBold.woff2") format("woff2"),
-       url("Outfit-SemiBold.woff") format("woff");
+   src: url("../fonts/Outfit-SemiBold.woff2") format("woff2"),
+       url("../fonts/Outfit-SemiBold.woff") format("woff");
    font-weight: 600;
    font-style: normal;
    font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
    font-family: "Outfit";
-   src: url("Outfit-Light.woff2") format("woff2"),
-       url("Outfit-Light.woff") format("woff");
+   src: url("../fonts/Outfit-Light.woff2") format("woff2"),
+       url("../fonts/Outfit-Light.woff") format("woff");
    font-weight: 300;
    font-style: normal;
    font-display: swap;
